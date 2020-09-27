@@ -1,0 +1,53 @@
+<div class="signin-container d-flex flex-column full-height">
+    <div class="header d-flex bg-primary p-v-8 p-h-8 align-items-center">
+        <div class="d-flex flex-column flex-grow-1">
+            <span class="text-white">Sign Document using</span>
+            <span class="text-white">{{email}}</span>
+        </div>
+        <div class="image-container bg-white p-h-8 p-v-8 border border-primary">
+            <img class="signin-header-img" src="/assets/icons/generic-logo-hi.png" />
+        </div> 
+    </div>
+    <div class="form-area-container d-flex flex-column p-v-32 p-h-32 flex-grow-1 align-self-center mb-auto">
+        <div class="gmail-login-section d-flex flex-column align-items-center p-v-16">
+            <div class="email-info p-v-8">
+                {{email}} uses gmail? login using google
+            </div>
+            <div class="signin-button p-v-8">
+                <button type="button" class="btn btn-danger">Google</button>
+            </div>
+        </div>
+        <div class="sparator d-flex w-100 align-items-center p-v-8">
+            <div class="separaor-line flex-grow-1"></div>
+            <div class="info p-h-16">OR</div>
+            <div class="separaor-line flex-grow-1"></div>
+        </div>
+        <div class="manual-form d-flex flex-column p-v-16 align-items-center">
+            <div class="email-section d-flex flex-column align-items-center">
+                <div class="label">
+                    <label>Proceed with your email address</label>
+                </div>
+                <div class="email-input">
+                    <input class="w-100" />
+                </div>
+            </div>
+            <div class="confirmation-area p-v-32 d-flex flex-column align-items-center">
+                <div class="info-text">
+                    <span>By continuing, I agree to the terms and services of digio.in</span>
+                </div>
+                <div class="submit">
+                    <button type="button" (click)="onContinue()" class="btn btn-primary">Continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer d-flex bg-white p-v-8 p-h-8 align-items-end">
+        <div class="image-container p-h-8 p-v-8 border-top border-bottom border-right border-left">
+            <img class="footer-img" src="/assets/icons/digio_logo.jpg" />
+        </div>
+        <div class="d-flex flex-column p-h-8">
+            <span class="text-secondary">Powered by</span>
+            <span class="text-primary">www.digio.in</span>
+        </div>
+    </div>
+</div> 

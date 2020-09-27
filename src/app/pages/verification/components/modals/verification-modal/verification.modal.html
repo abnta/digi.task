@@ -1,0 +1,49 @@
+<div class="verification-modal-container bg-white d-flex flex-column">
+  <div class="header d-flex p-v-16 p-h-16 border border-secondary">
+    <div class="info">
+      <span>Register Aadhar</span>
+    </div>
+  </div>
+  <div class="d-flex p-v-16 p-h-8">
+    <div class="d-flex p-v-8">
+      <div class="img-container mr-auto">
+        <img
+          class="aadhar-img"
+          src="/assets/icons/1200px-Aadhaar_Logo.svg.png"
+        />
+      </div>
+      <div class="d-flex w-100 justify-content-end">
+        <div class="d-flex flex-column align-self-end">
+          <div class="input-area d-flex justify-content-end">
+            <div class="p-h-8">
+              <input />
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-secondary btn-sm">
+                Verify
+              </button>
+            </div>
+          </div>
+          <div class="agreement-area p-v-8 d-flex justify-content-end">
+            <div class="checkbox-input p-h-8">
+              <input type="checkbox" />
+            </div>
+            <div class="info d-flex flex-column">
+              <span>I agree to to eSign the kyc document to get started</span>
+            </div>
+          </div>
+          <div class="d-flex justify-content-end">
+            <div>
+              <input type="text" class="w-50" />
+            </div>
+            <div>
+              <button type="button" class="btn btn-outline-secondary btn-sm" (click)="onSubmit()">
+                submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
